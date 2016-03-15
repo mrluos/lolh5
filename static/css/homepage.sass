@@ -1,0 +1,325 @@
+$heroBg: '../img/hero.png'
+$homeBg: '../img/home_bg.jpg'
+$iconBg: '../img/icon.png'
+$bannerH: 5.2rem
+$bossBg: '../img/boss_bg.jpg'
+$bossImg: '../img/boss.png'
+@function fireLogo($number)
+  @return '../img/firelogo/Firelogo_'+$number+'.png'
+.homepage.in
+  background: url($homeBg) no-repeat center center
+  background-size: cover
+.container
+  width: 10.8rem
+  height: 17.31rem
+  background-color: #031F2A
+  position: relative
+  display: block
+  margin: 0 auto
+  .homepage
+    overflow: hidden
+    width: 10.8rem
+    height: 17.31rem
+    position: relative
+    display: block
+    margin: 0 auto
+    .header-block
+      height: $bannerH
+      width: 100%
+      position: relative
+      .banner
+        width: 8.58rem
+        height: $bannerH
+        display: block
+        margin: 0 auto
+        background: url(fireLogo(0)) no-repeat left top
+        background-size: cover
+        position: absolute
+        z-index: 1
+        left: 1.11rem
+        top: -0.2rem
+      .fireLogo
+        animation-name: fireLogo
+        animation-iteration-count: 1
+        animation-timing-function: ease-in-out
+        animation-duration: 1200ms
+        animation-fill-mode: both
+    .content-block.in
+      .game-countDown
+        opacity: 1
+      .join-game
+        background: url($iconBg) no-repeat -3.3rem -1.4rem
+        background-size: 10.8rem 19.2rem
+        opacity: 1
+      .rules-block
+        background: url($iconBg) no-repeat -0.2rem -5.8rem
+        background-size: 10.8rem 19.2rem
+        opacity: 1
+    .content-block
+      width: 10.8rem
+      margin-top: -0.5rem
+      .game-countDown
+        width: 10.8rem
+        font-size: 0.4963rem
+        height: 0.64rem
+        text-align: center
+        color: white
+        opacity: 0
+        span
+          display: inline-block
+      .join-game
+        width: 6.84rem
+        height: 2rem
+        display: block
+        margin: 0 auto
+        position: relative
+        opacity: 0
+        .h-img
+          width: 1.42rem
+          height: 1.42rem
+          border-radius: 50%
+          background-color: #00a0e9
+          display: block
+          position: absolute
+          left: 0.1rem
+          top: 0.36rem
+      .rules-block
+        width: 10.29rem
+        height: 4.84rem
+        margin: 0.26rem auto
+        opacity: 0
+        .mask
+          padding: 0.7rem
+          span
+            width: 100%
+            text-align: left
+            font-size: 0.36rem
+            color: white
+            line-height: 1.3
+            display: block
+            margin-top: 0.37rem
+  .bosspage
+    width: 10.8rem
+    background-color: inherit
+    display: none
+    overflow-x: hidden
+    .nav
+      height: 1.46rem
+      width: 10.8rem
+    .boss-container.in
+      background: url($bossBg) no-repeat
+      background-size: cover
+      .hp-bar-layer
+        background: url($iconBg) no-repeat -3.5rem -3.38rem
+        background-size: 10.8rem 19.2rem
+        .hp-bar
+          background: url($iconBg) no-repeat -3.5rem -4.56rem
+          background-size: 10.8rem 19.2rem
+          transition: width 0.2s ease-in
+    .boss-container
+      width: 10.8rem
+      height: 15.83rem
+      display: inline-block
+      position: relative
+      .hp-block
+        width: 10.8rem
+        text-align: center
+        .timer-bar
+          margin-top: 0.98rem
+          font-size: 0.4583rem
+          color: white
+        .hp-bar-layer
+          margin: 0 auto
+          width: 6.14rem
+          height: 1.08rem
+          position: relative
+          .hp-bar
+            width: 10.8rem
+            height: 0.38rem
+            display: block
+            top: 0.3rem
+            position: absolute
+      .boss-block
+        position: absolute
+        top: 3.4rem
+        width: 10.8rem
+        height: 6.21rem
+        overflow: hidden
+        .attack-arae
+          width: 4.7rem
+          height: 3.49rem
+          position: absolute
+          right: 3rem
+          top: 1.2rem
+      .small-hb
+        position: absolute
+        height: 1.7rem
+        width: 0
+        left: 0.42rem
+        bottom: 0.66rem
+      .hero-block
+        display: none
+  .bosspage.boss1,.bosspage.boss2,.bosspage.boss3
+    display: block
+  .bosspage.boss1
+    .nav
+      background: url($iconBg) no-repeat 0 -10.76rem
+      background-size: 10.8rem 19.2rem
+    .boss-block
+      background: url($bossImg) no-repeat 0.2rem 0
+      background-size: 10.8rem 19.2rem
+  .bosspage.boss2
+    .nav
+      background: url($iconBg) no-repeat 0 -12.3rem
+      background-size: 10.8rem 19.2rem
+    .boss-block
+      background: url($bossImg) no-repeat 0.2rem -6.29rem
+      background-size: 10.8rem 19.2rem
+    .small-hb
+      background: url($iconBg) no-repeat 0rem -15.4rem
+      background-size: 10.8rem 19.2rem
+      width: 1.19rem
+  .bosspage.boss3
+    .nav
+      background: url($iconBg) no-repeat 0 -13.81rem
+      background-size: 10.8rem 19.2rem
+    .boss-block
+      background: url($bossImg) no-repeat 0.2rem -12.58rem
+      background-size: 10.8rem 19.2rem
+    .small-hb
+      background: url($iconBg) no-repeat 0rem -15.4rem
+      background-size: 10.8rem 19.2rem
+      width: 2.63rem
+    .hero-block
+      display: block
+.hb-block.mask
+  ul
+    width: 10.8rem!important
+    margin: 0!important
+    padding: 0!important
+    text-align: center!important
+    li
+      position: absolute!important
+      left: 3.9rem
+      margin-top: -2rem!important
+.hb-block
+  margin-top: 0.2rem
+  ul
+    width: 9.39rem
+    margin: 0 auto
+    text-align: justify
+    font-size: 0
+    line-height: 0
+  li.in
+    opacity: 1
+    background: url($iconBg) no-repeat 0 -1.45rem
+    background-size: 10.8rem 19.2rem
+    .num-icon
+      background: url($iconBg) no-repeat -0.3rem -0.3rem
+      background-size: 10.8rem 19.2rem
+    .icon2
+      background-position: -3.6rem -0.3rem
+    .icon3
+      background-position: -6.8rem -0.3rem
+  li
+    display: inline-block
+    width: 3rem
+    height: 4rem
+    position: relative
+    opacity: 0
+    .desc
+      font-size: 0.36rem
+      text-align: center
+      display: block
+      width: 100%
+      height: 0.5rem
+      line-height: 1.3
+      color: white
+      padding-top: 0.1rem
+    .num-icon
+      width: 1.95rem
+      height: 0.87rem
+      display: block
+      position: absolute
+      bottom: 0.7rem
+      left: 0.5rem
+.fixed-justify
+  width: 10.8rem!important
+  height: 0!important
+  display: block
+  font-size: 0
+  line-height: 0
+.countdown-timer
+  font-size: 1.8rem
+  border: 1px solid
+  border-radius: 50%
+  height: 2rem
+  width: 2rem
+  display: block
+  text-align: center
+  line-height: 2rem
+  padding: 0.2rem
+.countdown-timer.toSmall
+  animation: toSmall 0.3s ease-out forwards
+@keyframes toSmall
+  from
+    transform: scale(2)
+    opacity: 0.5
+    border: 0
+  to
+    transform: scale(0)
+    opacity: 1
+    border: 1px solid
+.hero-block.in
+  background: url($heroBg) no-repeat
+  background-size: 10.2rem 5.56rem
+.hero-block
+  transition: all 0.8s ease
+  position: absolute
+.hero1
+  width: 2rem
+  height: 1.86rem
+  top: -1.86rem
+  left: 1.6rem
+  background-position: -7rem -2.3rem
+.hero1.in
+  background-position: -7rem -2.3rem
+  left: 2.3rem
+  top: 0rem
+  display: block
+.hero2
+  width: 4.6rem
+  height: 5.56rem
+  background-position: 0
+  bottom: -1rem
+  left: -4.6rem
+.hero2.in
+  background-position: 0
+  left: 0
+  bottom: 0.5rem
+.hero3
+  width: 2rem
+  height: 1.86rem
+  background-position: -8.8rem -2rem
+  top: -1.86rem
+  right: -4.6rem
+.hero3.in
+  background-position: -8.8rem -2rem
+  right: 1rem
+  top: 0.5rem
+.hero4
+  width: 2.7rem
+  height: 3rem
+  background-position: -4.55rem -1.5rem
+  bottom: -3rem
+  right: -3rem
+.hero4.in
+  background-position: -4.55rem -1.5rem
+  right: 1rem
+  bottom: 0.5rem
+.hb-notice
+  position: absolute
+  width: 100%
+  font-size: 0.46rem
+  text-align: center
+  left: 0

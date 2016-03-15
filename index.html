@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <title>城市英雄争霸赛</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <script src="static/js/header.js?t=123"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css?t=2013031511110112">
+    <link rel="stylesheet" type="text/css" href="static/css/homepage.css?t=2013031151111012">
+</head>
+<body>
+<div class="container">
+    <div class="homepage">
+        <div class="header-block">
+            <div class="banner"></div>
+            <span class="hero-block hero1"></span>
+            <span class="hero-block hero2"></span>
+            <span class="hero-block hero3"></span>
+            <span class="hero-block hero4"></span>
+        </div>
+        <div class="content-block">
+            <div class="join-game">
+                <span class="h-img"></span>
+            </div>
+            <div class="game-countDown">比赛倒计时 <span class="less-time">00:06</span></div>
+            <div class="hb-block">
+                <ul>
+                    <li><span class="desc">第一关<br>团队红包</span><span class="num-icon icon1"></span></li>
+                    <li><span class="desc">第二关<br>团队红包</span><span class="num-icon icon2"></span></li>
+                    <li><span class="desc">第三关<br>团队红包</span><span class="num-icon icon3"></span></li>
+                    <li class="fixed-justify"></li>
+                </ul>
+            </div>
+            <div class="rules-block">
+                <div class="mask">
+                    <span>1.成功消灭Boss后，即可获得该关的团队奖励，同时自动进入下一关，每关的团队奖励将累加；</span>
+                    <span>2.团队奖励将随机分配给每个玩家；</span>
+                    <span>3.加入比赛后，未对Boss造成攻击数值的玩家，将无法获得奖励，请努力作战；</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bosspage">
+        <div class="nav"></div>
+        <div class="boss-container">
+            <div class="hp-block">
+                <div class="timer-bar">
+                    攻击倒计时：<span class="attack-time">1：00</span>
+                </div>
+                <div class="hp-bar-layer">
+                    <span class="hp-bar"></span>
+                </div>
+            </div>
+            <div class="boss-block">
+                <div class="attack-arae"></div>
+                <span class="hero-block hero1"></span>
+                <span class="hero-block hero2"></span>
+                <span class="hero-block hero3"></span>
+                <span class="hero-block hero4"></span>
+            </div>
+            <div class="small-hb"></div>
+        </div>
+    </div>
+</div>
+<div class="loading-block"><p class="loading-icon"></p>
+    <p class="loading-progress">0%</p></div>
+<script src="static/js/LAB.min.js"></script>
+<script>
+    $LAB.script("http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js").wait()
+            .script("http://cdn.gbtags.com/SoundJS/0.5.2/soundjs.min.js")
+            .script("http://cdn.gbtags.com/PreloadJS/0.4.1/preloadjs.min.js")
+            .script("static/js/common.js")
+            .script("static/js/homepage.js?t=2016031509561")
+            .wait(function () {
+                LOLHOME.start();
+            })
+</script>
+</body>
+</html>

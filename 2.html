@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head fon>
+    <title>SoundJS的基础使用</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <script src="static/js/header.js?t=123"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+    <style>
+        .Test {
+            width: 200px;
+            height: 200px;
+            background-color: beige;
+            margin: 100px auto;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        ul {
+            perspective: 600px;
+            transform-style: preserve-3d
+        }
+        li{
+            float: left;
+        }
+        li:nth-child(1) {
+
+        }
+
+        .animated {
+            -webkit-animation: rotating 1s infinite ease-in;
+            -o-animation: rotating 1s infinite ease-in;
+            animation: rotating 1s infinite ease-in;
+            -webkit-animation-direction: alternate;
+            -moz-animation-direction: alternate;
+            -o-animation-direction: alternate;
+            animation-direction: alternate;
+        }
+
+        @keyframes rotating {
+            from {
+                -webkit-transform: rotate3d(0, 1, 0, 0deg);
+                -moz-transform: rotate3d(0, 1, 0, 0deg);
+                -ms-transform: rotate3d(0, 1, 0, 0deg);
+                -o-transform: rotate3d(0, 1, 0, 0deg);
+                transform: rotate3d(0, 1, 0, 0deg);
+            }
+            to {
+                -webkit-transform: rotate3d(0, 1, 0, 360deg);
+                -moz-transform: rotate3d(0, 1, 0, 360deg);
+                -ms-transform: rotate3d(0, 1, 0, 360deg);
+                -o-transform: rotate3d(0, 1, 0, 360deg);
+                transform: rotate3d(0, 1, 0, 360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <div style="    margin: 120px auto;width: 80px;">
+        <ul>
+            <li><img src="//c.pic.wemepi.com/data.x/2016/3/10/20/6/14/b/8/5/8/d/b858d6a0d0337333bc1af5e6b6cd6440.jpg">
+            </li>
+            <li><img src="//c.pic.wemepi.com/data.x/2016/3/10/20/6/14/b/8/5/8/d/b858d6a0d0337333bc1af5e6b6cd6440.jpg">
+            </li>
+            <li><img src="//c.pic.wemepi.com/data.x/2016/3/10/20/6/14/b/8/5/8/d/b858d6a0d0337333bc1af5e6b6cd6440.jpg">
+            </li>
+            <li><img src="//c.pic.wemepi.com/data.x/2016/3/10/20/6/14/b/8/5/8/d/b858d6a0d0337333bc1af5e6b6cd6440.jpg">
+            </li>
+            <li><img src="//c.pic.wemepi.com/data.x/2016/3/10/20/6/14/b/8/5/8/d/b858d6a0d0337333bc1af5e6b6cd6440.jpg">
+            </li>
+            <li><img src="//c.pic.wemepi.com/data.x/2016/3/10/20/6/14/b/8/5/8/d/b858d6a0d0337333bc1af5e6b6cd6440.jpg">
+            </li>
+            <li><img src="//c.pic.wemepi.com/data.x/2016/3/10/20/6/14/b/8/5/8/d/b858d6a0d0337333bc1af5e6b6cd6440.jpg">
+            </li>
+            <li><img src="//c.pic.wemepi.com/data.x/2016/3/10/20/6/14/b/8/5/8/d/b858d6a0d0337333bc1af5e6b6cd6440.jpg">
+            </li>
+            <li><img src="//c.pic.wemepi.com/data.x/2016/3/10/20/6/14/b/8/5/8/d/b858d6a0d0337333bc1af5e6b6cd6440.jpg">
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="static/js/LAB.min.js"></script>
+<script>
+    $LAB.script("http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js").wait()
+            .script("static/js/common.js");
+</script>
+</body>
+</html>

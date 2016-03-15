@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <title>城市英雄争霸赛</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="static/js/header.js?t=123"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css?t=20160311">
+    <link rel="stylesheet" type="text/css" href="static/css/dispatch.css?t=20160314">
+</head>
+<body>
+<div class="container">
+    <div class="bosspage">
+        <div class="lvl1"></div>
+        <!--挑战成功分享-->
+        <div class="share_wrap">
+            <div class="content_wrap">
+                <div class="user_face"></div>
+                <div class="user_chat_content">
+                    <div class="arrow-left"></div>
+                    <div class="user_text_wrap">
+                        <div class="user_text">在你和小伙伴的努力下，成功<br>通过两关！恭喜获得奖励：<br/>500元团队红包(每位玩家随机分配)</div>
+                    </div>
+                </div>
+                <div class="clear_fix"></div>
+            </div>
+            <div class="content_wrap">
+                <div class="user_face"></div>
+                <div class="user_gift">
+                   <div class="gift_text">
+                       <div class="lvl_pass">恭喜通过三关！</div>
+                       <div class="gift_btn"><a href="javascript:;">领取红包</a></div>
+                   </div>
+                </div>
+                <div class="clear_fix"></div>
+            </div>
+            <div class="share_gift_wrap">
+                <div class="share_gift_btn"></div>
+            </div>
+            <div class="more_activity_wrap">
+                <div class="more_activity"></div>
+            </div>
+        </div>
+        <!--end-->
+    </div>
+</div>
+<div class="loading-block"><p class="loading-icon"></p><p class="loading-progress">0%</p></div>
+<script src="static/js/LAB.min.js"></script>
+<script>
+    $LAB.script("http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js").wait()
+            .script("http://cdn.gbtags.com/SoundJS/0.5.2/soundjs.min.js")
+            .script("http://cdn.gbtags.com/PreloadJS/0.4.1/preloadjs.min.js")
+            .script("static/js/common.js")
+            .script("static/js/dispatch.js?t=20160314")
+            .wait(function(){
+                Dispatch.start();
+            })
+</script>
+</body>
+</html>
