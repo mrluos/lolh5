@@ -440,7 +440,7 @@ var LOLHOME = {
             /*header img */
             var imgSrc = 'http://g.pic.wemepi.com/data.x/2015/7/18/10/11/5/c/3/a/1/7/c3a17b36a05be1de43e950328b7b38f2.jpg',
             //游戏开始时间(秒)
-                countDownTime = 3;
+                countDownTime = 6;
             self.scenesCls = new Scenes(imgSrc);
             var scenes = self.scenesCls;
             scenes.show();
